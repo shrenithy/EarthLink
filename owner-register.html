@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EarthLink | Equipment Owner Registration</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+header{
+    background:#2E7D32;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+h2{
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:15px;
+    background:#2E7D32;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1B5E20;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#666;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>🌍 EARTHLINK</h1>
+<p>Heavy Equipment Owner Registration</p>
+</header>
+
+<div class="container">
+
+<h2>Register Your Equipment</h2>
+
+<form>
+
+<label>Owner Full Name</label>
+<input type="text" placeholder="Enter your full name" required>
+
+<label>Mobile Number</label>
+<input type="tel" placeholder="9876543210" required>
+
+<label>WhatsApp Number</label>
+<input type="tel" placeholder="9876543210">
+
+<label>Email</label>
+<input type="email" placeholder="example@gmail.com">
+
+<label>District</label>
+<input type="text" placeholder="Chennai">
+
+<label>City / Village</label>
+<input type="text" placeholder="Location">
+
+<label>Equipment Type</label>
+
+<select required>
+<option>Select Equipment</option>
+<option>JCB</option>
+<option>Tipper</option>
+<option>Tractor</option>
+<option>Crane</option>
+<option>Excavator</option>
+<option>Bulldozer</option>
+<option>Road Roller</option>
+<option>Poclain</option>
+<option>Other</option>
+</select>
+
+<label>Vehicle Model</label>
+<input type="text" placeholder="CAT 320D">
+
+<label>Registration Number</label>
+<input type="text" placeholder="TN XX XX 1234">
+
+<label>Hourly Charge (₹)</label>
+<input type="number" placeholder="1500">
+
+<label>Available From</label>
+<input type="date">
+
+<label>Upload Equipment Photo</label>
+<input type="file">
+
+<label>Upload RC Book</label>
+<input type="file">
+
+<label>Additional Information</label>
+<textarea rows="4" placeholder="Write here..."></textarea>
+
+<button type="submit">Register Equipment</button>
+
+</form>
+
+</div>
+
+<footer>
+© 2026 EarthLink | Connecting Equipment Owners & Customers
+</footer>
+
+</body>
+</html>
