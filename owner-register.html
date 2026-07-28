@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EarthLink | Equipment Owner Registration</title>
+
+<title>EarthLink | Owner Registration</title>
 
 <style>
 *{
@@ -14,59 +15,58 @@
 }
 
 body{
-    background:#f5f7fa;
-}
-
-header{
-    background:#2E7D32;
-    color:white;
-    padding:20px;
-    text-align:center;
+    background:#f4f6f2;
 }
 
 .container{
     width:90%;
-    max-width:700px;
-    margin:30px auto;
+    max-width:500px;
+    margin:40px auto;
     background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.logo{
+    text-align:center;
+    font-size:32px;
+    font-weight:bold;
+    color:#2E7D32;
+}
+
+.logo span{
+    color:#6D4C41;
 }
 
 h2{
     text-align:center;
-    color:#2E7D32;
-    margin-bottom:20px;
+    margin:20px 0;
+    color:#333;
 }
 
 label{
+    font-weight:bold;
     display:block;
     margin-top:15px;
-    font-weight:bold;
 }
 
-input,select,textarea{
+input,select{
     width:100%;
     padding:12px;
-    margin-top:5px;
+    margin-top:8px;
     border:1px solid #ccc;
-    border-radius:8px;
-    font-size:16px;
-}
-
-textarea{
-    resize:none;
+    border-radius:10px;
 }
 
 button{
     width:100%;
     margin-top:25px;
-    padding:15px;
+    padding:14px;
+    border:none;
+    border-radius:12px;
     background:#2E7D32;
     color:white;
-    border:none;
-    border-radius:8px;
     font-size:18px;
     cursor:pointer;
 }
@@ -75,90 +75,95 @@ button:hover{
     background:#1B5E20;
 }
 
-footer{
+.note{
     text-align:center;
-    padding:20px;
-    color:#666;
+    margin-top:15px;
+    font-size:13px;
+    color:gray;
 }
+
 </style>
 
 </head>
-<body>
 
-<header>
-<h1>🌍 EARTHLINK</h1>
-<p>Heavy Equipment Owner Registration</p>
-</header>
+<body>
 
 <div class="container">
 
-<h2>Register Your Equipment</h2>
+<div class="logo">
+EARTH<span>LINK</span>
+</div>
+
+<h2>Equipment Owner Registration</h2>
+
 
 <form>
 
-<label>Owner Full Name</label>
-<input type="text" placeholder="Enter your full name" required>
+<label>Owner Name</label>
+<input type="text" placeholder="Enter your name">
+
 
 <label>Mobile Number</label>
-<input type="tel" placeholder="9876543210" required>
+<input type="number" placeholder="Enter mobile number">
 
-<label>WhatsApp Number</label>
-<input type="tel" placeholder="9876543210">
 
 <label>Email</label>
-<input type="email" placeholder="example@gmail.com">
+<input type="email" placeholder="Enter email">
 
-<label>District</label>
-<input type="text" placeholder="Chennai">
 
-<label>City / Village</label>
-<input type="text" placeholder="Location">
+<label>Location</label>
+<input type="text" placeholder="City / District">
+
 
 <label>Equipment Type</label>
 
-<select required>
+<select>
 <option>Select Equipment</option>
-<option>JCB</option>
-<option>Tipper</option>
+<option>JCB Backhoe Loader</option>
 <option>Tractor</option>
+<option>Tipper</option>
 <option>Crane</option>
 <option>Excavator</option>
-<option>Bulldozer</option>
-<option>Road Roller</option>
-<option>Poclain</option>
-<option>Other</option>
+<option>Harvester</option>
 </select>
 
-<label>Vehicle Model</label>
-<input type="text" placeholder="CAT 320D">
 
-<label>Registration Number</label>
-<input type="text" placeholder="TN XX XX 1234">
+<label>Vehicle Number</label>
+<input type="text" placeholder="TN XX XX XXXX">
 
-<label>Hourly Charge (₹)</label>
-<input type="number" placeholder="1500">
 
-<label>Available From</label>
-<input type="date">
+<label>Experience</label>
 
-<label>Upload Equipment Photo</label>
+<select>
+<option>Select Years</option>
+<option>0-2 Years</option>
+<option>3-5 Years</option>
+<option>5+ Years</option>
+</select>
+
+
+<label>Available Timing</label>
+<input type="text" placeholder="Eg: 9 AM - 6 PM">
+
+
+<label>Upload RC / Document</label>
 <input type="file">
 
-<label>Upload RC Book</label>
-<input type="file">
 
-<label>Additional Information</label>
-<textarea rows="4" placeholder="Write here..."></textarea>
+<button>
+Register as Owner
+</button>
 
-<button type="submit">Register Equipment</button>
 
 </form>
 
+
+<div class="note">
+EarthLink connects equipment owners with customers
 </div>
 
-<footer>
-© 2026 EarthLink | Connecting Equipment Owners & Customers
-</footer>
+
+</div>
 
 </body>
 </html>
